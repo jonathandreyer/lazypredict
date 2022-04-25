@@ -277,8 +277,8 @@ class LazyClassifier:
         else:
             try:
                 temp_list = []
-                for classifier in self.classifiers:
-                    full_name = (classifier.__name__, classifier)
+                for name, classifier in self.classifiers:
+                    full_name = (name, classifier)
                     temp_list.append(full_name)
                 self.classifiers = temp_list
             except Exception as exception:
