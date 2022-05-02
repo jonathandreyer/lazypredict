@@ -150,7 +150,7 @@ class LazyClassifier:
         When set to True, the warning related to algorigms that are not able to run are ignored.
     custom_metric : function, optional (default=None)
         When function is provided, models are evaluated based on the custom evaluation metric provided.
-    prediction : bool, optional (default=False)
+    predictions : bool, optional (default=False)
         When set to True, the predictions of all the models models are returned as dataframe.
     classifiers : list, optional (default="all")
         When function is provided, trains the chosen classifier(s).
@@ -432,7 +432,7 @@ class LazyRegressor:
         When set to True, the warning related to algorigms that are not able to run are ignored.
     custom_metric : function, optional (default=None)
         When function is provided, models are evaluated based on the custom evaluation metric provided.
-    prediction : bool, optional (default=False)
+    predictions : bool, optional (default=False)
         When set to True, the predictions of all the models models are returned as dataframe.
     regressors : list, optional (default="all")
         When function is provided, trains the chosen regressor(s).
